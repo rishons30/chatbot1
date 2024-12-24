@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LOG IN PAGE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body
+    class="bg-[url('pic.jpg')] flex items-center justify-center h-screen bg-violet-500"
+  >
+    <div class="grid grid-cols-3 border-2 border-black py-8 px-8 bg-stone-900">
+      <h1 class="col-start-2 text-2xl text-white">LOG IN</h1>
+
+      <form id="loginform" class="col-span-full">
+        <div>
+          <label for="username" class="text-white">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            class="border border-black rounded px-2 py-1 w-full mt-2"
+          />
+        </div>
+        <div>
+          <label for="password" class="text-white">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="pas1"
+            class="border border-black rounded px-2 py-1 w-full mt-2"
+          />
+        </div>
+        <div class="flex justify-center">
+          <button
+            type="submit"
+            id="sub"
+            name="signin"
+            class="border rounded py-2 w-1/2 mt-4 text-white bg-purple-500 hover:bg-purple-700"
+          >
+            Sign In
+          </button>
+        </div>
+      </form>
+      <p class="col-span-full text-center text-red-500 mt-4">
+        Don't have an account?
+        <a href="signup.html" class="text-white underline hover:text-purple-700"
+          >Sign Up</a
+        >
+      </p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
