@@ -16,31 +16,3 @@ function getdetails() {
 }
 
 //LOGIN FORM
-document.addEventListener("DOMContentLoaded", function () {
-  console.log("DOM fully loaded and parsed");
-  console.log(document.getElementById("loginform"));
-
-  const loginForm = document.getElementById("loginform");
-
-  if (loginForm) {
-    console.log("Login form found");
-
-    // Add event listener to form
-    loginForm.addEventListener("submit", function (event) {
-      event.preventDefault(); // Prevent the form submission
-      console.log("Form submitted");
-
-      checkDetails();
-    });
-  } else {
-    console.error("Login form not found.");
-  }
-
-  function checkDetails() {
-    const usernameLogin = document.getElementById("username").value;
-    const passwordLogin = document.getElementById("password").value;
-
-    console.log("Login Username:", usernameLogin);
-    console.log("Login Password:", passwordLogin);
-  }
-});

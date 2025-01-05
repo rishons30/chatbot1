@@ -3,6 +3,8 @@
   <head>
     <title>SIGN UP PAGE</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- SweetAlert2 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
 
   <body
@@ -11,7 +13,12 @@
     <div class="grid grid-cols-3 border-2 border-black py-8 px-8 bg-stone-900">
       <h1 class="col-start-2 text-2xl text-white">SIGN UP</h1>
 
-      <form id="signupform" class="col-span-full" method="post">
+      <form
+        id="signupform"
+        class="col-span-full"
+        method="post"
+        action="/submit"
+      >
         <div>
           <label for="usname" class="text-white">Name:</label>
           <input
@@ -22,20 +29,20 @@
           />
         </div>
         <div>
-          <label for="fname" class="text-white">Username:</label>
+          <label for="username" class="text-white">Username:</label>
           <input
             type="text"
             id="username"
-            name="fname"
+            name="username"
             class="border border-black rounded px-2 py-1 w-full mt-2"
           />
         </div>
         <div>
-          <label for="pas" class="text-white">Password:</label>
+          <label for="password" class="text-white">Password:</label>
           <input
             type="password"
-            id="pas"
-            name="pas"
+            id="password"
+            name="password"
             class="border border-black rounded px-2 py-1 w-full mt-2"
           />
         </div>
@@ -46,17 +53,16 @@
             name="signin"
             class="border rounded py-2 w-1/2 mt-4 text-white bg-purple-500 hover:bg-purple-700"
           >
-            Sign In
+            Sign Up
           </button>
         </div>
       </form>
       <p class="col-span-full text-center text-red-500 mt-4">
         Already have an account?
-        <a href="index.html" class="text-white underline hover:text-purple-700"
+        <a href="/" class="text-white underline hover:text-purple-700"
           >Log in</a
         >
       </p>
     </div>
-    <script src="index.js"></script>
   </body>
 </html>

@@ -1,0 +1,99 @@
+/* Apply background to the entire wrapper, which wraps the navbar and other content */
+.wrapper {
+  background-color: #000000;
+  min-height: 100vh; /* Make sure it takes up the full viewport height */
+}
+
+/* Optionally, style the body */
+html,
+body {
+  height: 100%;
+}
+.chat {
+  display: flex;
+
+  padding-top: 20px;
+}
+
+#chatinput {
+  margin-left: 20px;
+  padding: 5px;
+  max-width: calc(100%-50px);
+  width: 50%;
+}
+
+#chatbutton {
+  margin-left: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* .hospital-cards {
+  margin: 30px;
+  color: white;
+} */
+
+.hospital-cards-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap to the next line */
+  gap: 10px; /* Adds space between each card */
+  /* Ensures cards are spaced out evenly */
+  padding: 10px; /* Optional: Adds space inside the container */
+  margin-top: 40px;
+  justify-content: space-around;
+}
+
+/* Style for each hospital card */
+.hospital-cards {
+  background-color: #1d219c; /* Light background color for the card */
+  padding: 20px; /* Adds padding inside the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  width: 250px; /* Fixed width for each card */
+  margin-right: 30px;
+  text-align: center; /* Centers text inside the card */
+  height: 200px;
+  color: white;
+  overflow: hidden;
+}
+
+.hospital-cards p {
+  margin: 5px 0; /* Add space between paragraphs */
+  word-wrap: break-word; /* Break words to fit inside */
+  /* Hide overflowing text */
+  text-overflow: ellipsis; /* Add '...' if text overflows */
+  /* Prevent wrapping text to a new line */
+  font-size: 14px; /* Set font size for text */
+}
+
+.dashboard-intro {
+  margin: 30px;
+  color: beige;
+  font-size: medium;
+}
+
+.healthcare-content {
+  color: beige;
+  font-size: medium;
+  margin-left: 30px;
+  margin-top: 40px;
+
+  margin-bottom: 20px;
+}
+.contact {
+  color: beige;
+  font-size: medium;
+  margin-left: 30px;
+  margin-top: 40px;
+  padding-bottom: 20px;
+}
+#contact-form {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 100%;
+  width: 20%;
+}
+#sbmt1 {
+  margin-top: 20px;
+}
